@@ -19,7 +19,7 @@ CORS(app, resources={
 
 # Đường dẫn model (có thể dùng biến môi trường)
 base_path = os.path.dirname(os.path.abspath(__file__))
-model_path = os.getenv('MODEL_PATH', os.path.join(base_path, '..', 'detect_html_model.txt'))
+model_path = os.getenv('MODEL_PATH', os.path.join(base_path, 'detect_html_model.txt'))
 
 # Load model một lần khi khởi động
 try:
